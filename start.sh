@@ -1,6 +1,7 @@
 Version_de_Minecraft= $MINECRAFT_VERSION;
 Jarfile_name= $SERVER_JARFILE;
 
+echo "${Version_de_Minecraft}";
 if [[ $Version_de_Minecraft < 1.7 ]]; then
     java -Xms128M -XX:MaxRAMPercentage=95.0 -Dterminal.jline=false -Dterminal.ansi=true -jar $Jarfile_name;
 elif [[ $Version_de_Minecraft == 1.7.* || $Version_de_Minecraft == 1.8.* || $Version_de_Minecraft == 1.9.* || $Version_de_Minecraft == 1.10.* || $Version_de_Minecraft == 1.11.* ]]; then
